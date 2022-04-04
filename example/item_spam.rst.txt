@@ -1,0 +1,14 @@
+Spam
+--------------------
+
+.. code-block:: python
+
+    >>> a * 6
+    24
+
+Lorem ipsum dolor sit amet
+
+.. code-block:: python
+
+    >>> "こんにちは" * a
+    'こんにちはこんにちはこんにちはこんにちは'

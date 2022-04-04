@@ -1,0 +1,16 @@
+Ham
+--------------------
+
+Lorem ipsum dolor sit amet
+
+.. code-block:: python
+
+    >>> a = 4
+    >>> a
+    4
+
+Lorem ipsum dolor sit amet,
+
+.. doctest in comment (for setUp, tearDown)
+    >>> a + 1
+    5
