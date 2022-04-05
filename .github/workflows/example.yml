@@ -18,7 +18,7 @@ jobs:
       - id: listup-targets
         run: |
           files=$(ls example/item_*.rst.txt)
-          escaped_files="${files//$'\n'/\\n}"
+          escaped_files="${files//$'\n'/\ }"
           echo "::set-output name=files::${escaped_files}"
       - name: Prepare doctest target file
         uses: ftnext/action-concatenate-files@main
