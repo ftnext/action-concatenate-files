@@ -16,7 +16,10 @@ jobs:
         with:
           python-version: "3.10"
       - id: listup-targets
-        run: echo "::set-output name=files::$(ls example/item_*.rst.txt)"
+        run: |
+          files=$(ls example/item_*.rst.txt)
+          escaped_files="${files//$'\n'/\\n}"
+          echo "::set-output name=files::${escaped_files}"
       - name: Prepare doctest target file
         uses: ftnext/action-concatenate-files@main
         with:
