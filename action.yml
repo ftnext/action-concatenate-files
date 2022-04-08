@@ -12,7 +12,7 @@ runs:
   using: composite
   steps:
   - run: |
-      ./entrypoint.sh ${SOURCES} ${DESTINATION}
+      ${GITHUB_ACTION_PATH}/entrypoint.sh ${SOURCES} ${DESTINATION}
     env:
       # workaround ref: https://github.com/actions/runner/issues/665#issuecomment-699481628
       SOURCES: ${{ inputs.sources }}
